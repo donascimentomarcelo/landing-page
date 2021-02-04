@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import avatar from './profile.png';
 import './App.css';
+import Header from './layout/Header/Header';
+import Container from './layout/Container/Container';
+import Avatar from './layout/Avatar/Avatar';
+import SocialNetwork from './layout/SocialNetwork/SocialNetwork';
 
 function App() {
+
+  const socialNetwork = [
+    {
+      title: 'Github',
+      url: 'https://github.com/donascimentomarcelo'
+    },
+    {
+      title: 'Linkedin',
+      url: 'https://www.linkedin.com/in/marcelo-nascimento-0b734a189/'
+    }
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Container>
+        <Avatar avatar={avatar} />
+        <SocialNetwork
+          data={socialNetwork} />
+      </Container>
     </div>
   );
 }
