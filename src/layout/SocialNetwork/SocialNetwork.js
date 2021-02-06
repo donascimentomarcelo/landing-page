@@ -21,7 +21,7 @@ const SocialNetwork = ({ data }) => {
     }
 
     return (
-        <div className="container">
+        <div className="container-social-network">
             {renderAnchor()}
         </div>
     )
