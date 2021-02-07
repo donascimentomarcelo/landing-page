@@ -93,10 +93,10 @@ function App() {
             type='bancoDeDados' 
             skills={skillsDatabase}/>
           <Skill
-            type='Mobile' 
+            type='mobile' 
             skills={skillsMobile}/>
           <Skill
-            type='DevOps' 
+            type='devOps' 
             skills={skillsDevOps}/>
         </Ide>
       </Container>

@@ -1,15 +1,17 @@
 import React from 'react'
+import Const from '../Const/Const'
+import String from '../String/String'
 import './Description.css'
 
 const Description = ({title, description}) => {
 
     const renderRow = () => {
-        return description.map(item => (<p>{ item.title }</p> ))
+        return description.map(item => (<String name={item.title}/> ))
     }
 
     return (
         <div className="container-description">
-            const {title} = &#123;
+            <Const/> {title} = &#123;
                 <div className="align-description">
                     { renderRow() }
                 </div>
