@@ -7,6 +7,7 @@ import SocialNetwork from './layout/SocialNetwork/SocialNetwork';
 import Description from './layout/Description/Description';
 import Skill from './layout/Skill/Skill';
 import Ide from './layout/Ide/Ide';
+import Footer from './layout/Footer/Footer';
 
 function App() {
 
@@ -58,6 +59,8 @@ function App() {
             skills={skillsBackend}/>
         </Ide>
       </Container>
+      <Footer
+        contact={socialNetwork}/>
     </div>
   );
 }

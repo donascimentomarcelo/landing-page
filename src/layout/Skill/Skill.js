@@ -4,7 +4,7 @@ import './Skill.css'
 const Skill = ({ type, skills }) => {
 
     const renderRow = () => {
-        return skills.map(skill => (<p>{skill}</p>))
+        return skills.map(skill => (<p key={skill}>{skill}</p>))
     }
 
     return (

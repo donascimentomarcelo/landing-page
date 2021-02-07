@@ -14,7 +14,7 @@ const Header = () => (
             target="_blank"
             rel="noopener noreferrer"
         >
-            Something
+            Theme
         </a>
     </header>
 );

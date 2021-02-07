@@ -1,0 +1,14 @@
+.container-contact {
+    color: #00ff0d;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ul-contact {
+    display: flex;
+}
+
+.li-contact {
+    margin: 10px;
+}
