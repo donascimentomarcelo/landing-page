@@ -4,6 +4,35 @@
     margin-right: auto;
 }
 
+.profile-name {
+    color: #ffffff;
+}
+
+.brackets::before {
+    content: "{{ ";
+    color: #569cd6;
+    margin-right: 10px;
+}
+
+.brackets::after {
+    content: " }}";
+    color: #569cd6;
+    margin-left: 10px;
+}
+
+.occupation {
+    font-size: 20px;
+    color: #9E9E9E;
+}
+
+.bar-asterisk::before {
+    content: "/** ";
+}
+
+.bar-asterisk::after {
+    content: "**/ ";
+}
+
 ul {
     list-style-type: none;
     padding: 0;

@@ -1,4 +1,15 @@
-.app-link {
-    color: #00ff0d;
+.anchor {
+    color: #009688;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.anchor::before {
+    content: "<";
+    color: gray;
+}
+
+.anchor::after {
+    content: "/> ";
+    color: gray;
 }

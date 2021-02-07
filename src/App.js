@@ -11,6 +11,14 @@ import Footer from './layout/Footer/Footer';
 
 function App() {
 
+  const description = [
+    { title: '"Olá! '},
+    { title: 'Bem vindo a minha página!!! '},
+    { title: 'Meu nome é Marcelo e tenho 26 anos. '},
+    { title: 'Sou formado em Tecnologia da Informação (Análise e Desenvolvimento de Sistemas) '},
+    { title: 'e sou formado na MIT de em Engenharia de Software com tecnologia Java."'},
+  ]
+
   const socialNetwork = [
     {
       title: 'Github',
@@ -19,22 +27,42 @@ function App() {
     {
       title: 'Linkedin',
       url: 'https://www.linkedin.com/in/marcelo-nascimento-0b734a189/'
+    },
+    {
+      title: 'Whatsapp',
+      url: 'https://api.whatsapp.com/send?phone=5521982525286'
     }
   ];
 
   const skillsFrontend = [
-    '"HTML5/CSS3/SCSS",',
+    '"HTML5",',
+    '"CSS3",',
+    '"SCSS",',
     '"Javascript",',
     '"AngularJs",',
     '"Angular +2",',
     '"ReactJs",',
-    '"React Native",',
-    '"Ionic",',
+    '"Redux",',
   ]
 
   const skillsBackend = [
     '"Java/Spring MVC/Spring Boot",',
     '"PHP/Laravel",',
+  ]
+
+  const skillsDatabase = [
+    '"Mysql",',
+    '"Oracle",',
+    '"PostgreSql",',
+    '"MongoDB ",',
+  ]
+
+  const skillsMobile = [
+    '"Ionic +3",',
+    '"React Native",',
+  ]
+
+  const skillsDevOps = [
     '"Microserviços",',
     '"APIs",',
     '"Jenkins",',
@@ -48,15 +76,28 @@ function App() {
       <Container>
         <Avatar avatar={avatar} />
           <SocialNetwork
+            name="Marcelo Sant'Anna"
+            occupation='Desenvolvedor Fullstack'
             data={socialNetwork} />
         <Ide>
-          <Description />
+          <Description
+            title='descricao' 
+            description={description}/>
           <Skill
             type='frontend' 
             skills={skillsFrontend}/>
           <Skill
             type='backend' 
             skills={skillsBackend}/>
+          <Skill
+            type='bancoDeDados' 
+            skills={skillsDatabase}/>
+          <Skill
+            type='Mobile' 
+            skills={skillsMobile}/>
+          <Skill
+            type='DevOps' 
+            skills={skillsDevOps}/>
         </Ide>
       </Container>
       <Footer

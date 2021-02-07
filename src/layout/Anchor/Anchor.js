@@ -3,7 +3,7 @@ import './Anchor.css'
 
 const Anchor = ({ title, url }) => (
     <a
-        className="app-link"
+        className="anchor"
         href={url}
         target="_blank"
         rel="noopener noreferrer"
