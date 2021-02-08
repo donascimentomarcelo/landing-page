@@ -6,15 +6,25 @@
     padding: 0 2rem;
 }
 
-.app-header__logo {
+.app-header__language {
     height: 100px;
     width: 300px;
 }
 
-.app-header__logo-font {
-    color: #00ff0d;
+.app-header__language-font {
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
-    padding-top: 15px;
+    padding-top: 1px;
+}
+
+.style-button {
+    background-color: #000000fc;
+    border-color:  #000000fc; 
+    border:  #000000fc;
+    cursor: pointer;
+}
+
+.style-button:active {
+    
 }

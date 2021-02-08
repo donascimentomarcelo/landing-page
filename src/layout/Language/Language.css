@@ -1,0 +1,16 @@
+.lang {
+    color: #009688;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lang::before {
+    content: "<";
+    color: gray;
+}
+
+.lang::after {
+    content: "/> ";
+    color: gray;
+}

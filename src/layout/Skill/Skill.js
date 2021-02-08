@@ -6,7 +6,7 @@ import './Skill.css'
 const Skill = ({ type, skills }) => {
 
     const renderRow = () => {
-        return skills.map(skill => (<String name={skill}/>))
+        return skills.map((skill, i) => (<String name={skill} key={i}/>))
     }
 
     return (

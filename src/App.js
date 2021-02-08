@@ -1,3 +1,4 @@
+import React from 'react'
 import avatar from './profile.png';
 import './App.css';
 import Header from './layout/Header/Header';
@@ -11,13 +12,23 @@ import Footer from './layout/Footer/Footer';
 
 function App() {
 
-  const description = [
-    { title: '"Olá! '},
-    { title: 'Bem vindo a minha página!!! '},
+  const [language, setLanguage] = React.useState('PT-br')
+
+  const descriptionPt = [
+    { title: '"Olá! Bem vindo a minha página!!! '},
     { title: 'Meu nome é Marcelo e tenho 26 anos. '},
     { title: 'Sou formado em Tecnologia da Informação (Análise e Desenvolvimento de Sistemas) '},
     { title: 'e sou formado na MIT de em Engenharia de Software com tecnologia Java."'},
-  ]
+    { title: 'Abaixo está minha lista de habilidades."'},
+  ];
+
+  const descriptionEn = [
+    { title: '"Hi! Welcome to my page!!! '},
+    { title: 'This is Marcelo, and I am 26. '},
+    { title: 'I am trained in systems analysis and development'},
+    { title: 'and also in MIT Software Engineer with Java."'},
+    { title: 'Bellow is my skills list."'},
+  ];
 
   const socialNetwork = [
     {
@@ -70,19 +81,26 @@ function App() {
     '"Git",',
   ]
 
+  const changeLanguage = () => {
+    const currentLanguage = language == 'PT-br' ? 'Eng' : 'PT-br'
+    setLanguage(currentLanguage)
+  }
+
+  const filterByLanguagePtBr = (param1, param2) => language == 'PT-br' ? param1 : param2;
+
   return (
     <div className="app">
-      <Header />
+      <Header title={filterByLanguagePtBr('PT-br', 'Eng')} handleClick={() => changeLanguage()}/>
       <Container>
         <Avatar avatar={avatar} />
           <SocialNetwork
             name="Marcelo Sant'Anna"
-            occupation='Desenvolvedor Fullstack'
+            occupation={filterByLanguagePtBr('Desenvolvedor Fullstack', 'Fullstack Developer')}
             data={socialNetwork} />
         <Ide>
           <Description
-            title='descricao' 
-            description={description}/>
+            title='description' 
+            description={filterByLanguagePtBr(descriptionPt, descriptionEn)}/>
           <Skill
             type='frontend' 
             skills={skillsFrontend}/>
@@ -90,13 +108,13 @@ function App() {
             type='backend' 
             skills={skillsBackend}/>
           <Skill
-            type='bancoDeDados' 
+            type='database' 
             skills={skillsDatabase}/>
           <Skill
             type='mobile' 
             skills={skillsMobile}/>
           <Skill
-            type='devOps' 
+            type='devops' 
             skills={skillsDevOps}/>
         </Ide>
       </Container>

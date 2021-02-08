@@ -1,21 +1,17 @@
 import React from 'react'
+import Language from '../Language/Language'
 import './Header.css'
 
-const Header = () => (
+const Header = ({title, handleClick}) => (
     <header className="app-header">
-        <span className="app-header__logo">
-            <p className="app-header__logo-font">
-                Marcelo Do Nascimento
+        {/* <span className="app-header__language">
+            <p className="app-header__language-font">
             </p>
-        </span>
-        <a
-            className="app-link"
-            href="https://github.com/donascimentomarcelo"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Theme
-        </a>
+        </span> */}
+        <button className="style-button" onClick={() => handleClick()}>
+            <Language
+                title={title}/>
+        </button>
     </header>
 );
 
