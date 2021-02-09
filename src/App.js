@@ -18,7 +18,7 @@ function App() {
     { title: '"Olá! Bem vindo a minha página!!! '},
     { title: 'Meu nome é Marcelo e tenho 26 anos. '},
     { title: 'Sou formado em Tecnologia da Informação (Análise e Desenvolvimento de Sistemas) '},
-    { title: 'e sou formado na MIT de em Engenharia de Software com tecnologia Java."'},
+    { title: 'e sou formado na MIT de em Engenharia de Software com tecnologia Java.'},
     { title: 'Abaixo está minha lista de habilidades."'},
   ];
 
@@ -26,7 +26,7 @@ function App() {
     { title: '"Hi! Welcome to my page!!! '},
     { title: 'This is Marcelo, and I am 26. '},
     { title: 'I am trained in systems analysis and development'},
-    { title: 'and also in MIT Software Engineer with Java."'},
+    { title: 'and also in MIT Software Engineer with Java.'},
     { title: 'Bellow is my skills list."'},
   ];
 
@@ -46,39 +46,39 @@ function App() {
   ];
 
   const skillsFrontend = [
-    '"HTML5",',
-    '"CSS3",',
-    '"SCSS",',
-    '"Javascript",',
-    '"AngularJs",',
-    '"Angular +2",',
-    '"ReactJs",',
-    '"Redux",',
+    '"HTML5"',
+    '"CSS3"',
+    '"SCSS"',
+    '"Javascript"',
+    '"AngularJs"',
+    '"Angular +2"',
+    '"ReactJs"',
+    '"Redux"',
   ]
 
   const skillsBackend = [
-    '"Java/Spring MVC/Spring Boot",',
-    '"PHP/Laravel",',
+    '"Java/Spring MVC/Spring Boot"',
+    '"PHP/Laravel"',
   ]
 
   const skillsDatabase = [
-    '"Mysql",',
-    '"Oracle",',
-    '"PostgreSql",',
-    '"MongoDB ",',
+    '"Mysql"',
+    '"Oracle"',
+    '"PostgreSql"',
+    '"MongoDB "',
   ]
 
   const skillsMobile = [
-    '"Ionic +3",',
-    '"React Native",',
+    '"Ionic +3"',
+    '"React Native"',
   ]
 
   const skillsDevOps = [
-    '"Microserviços",',
-    '"APIs",',
-    '"Jenkins",',
-    '"Docker",',
-    '"Git",',
+    '"Microserviços"',
+    '"APIs"',
+    '"Jenkins"',
+    '"Docker"',
+    '"Git"',
   ]
 
   const changeLanguage = () => {
