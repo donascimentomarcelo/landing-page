@@ -1,8 +1,8 @@
 import React from 'react'
-import './Ide.css'
+import './Ide.scss'
 
 const Ide = props => (
-    <div className="container-ide">
+    <div className="ide">
         {props.children}
     </div>
 )

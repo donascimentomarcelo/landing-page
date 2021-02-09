@@ -1,6 +1,6 @@
 import React from 'react'
 import avatar from './profile.png';
-import './App.css';
+import './App.scss';
 import Header from './layout/Header/Header';
 import Container from './layout/Container/Container';
 import Avatar from './layout/Avatar/Avatar';
@@ -13,6 +13,7 @@ import Footer from './layout/Footer/Footer';
 function App() {
 
   const [language, setLanguage] = React.useState('PT-br')
+  const [theme, setTheme] = React.useState('Dark')
 
   const descriptionPt = [
     { title: '"Olá! Bem vindo a minha página!!! '},
@@ -86,11 +87,23 @@ function App() {
     setLanguage(currentLanguage)
   }
 
+  const changeTheme = () => {
+    const currentTheme = theme == 'Dark' ? 'Light' : 'Dark'
+    setTheme(currentTheme)
+  }
+
   const filterByLanguagePtBr = (param1, param2) => language == 'PT-br' ? param1 : param2;
+  
+  const filterByDarkTheme = (param1, param2) => theme == 'Dark' ? param1 : param2;
 
   return (
     <div className="app">
-      <Header title={filterByLanguagePtBr('PT-br', 'Eng')} handleClick={() => changeLanguage()}/>
+      <Header 
+        language={filterByLanguagePtBr('PT-br', 'Eng')} 
+        handleClickLanguage={() => changeLanguage()}
+        theme={filterByDarkTheme('Dark', 'Light')} 
+        handleClickTheme={() => changeTheme()}
+        />
       <Container>
         <Avatar avatar={avatar} />
           <SocialNetwork

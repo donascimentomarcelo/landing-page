@@ -1,0 +1,22 @@
+@import './../../style/Variable.scss';
+
+.lang {
+    color: $tag;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    &::before {
+        content: "<";
+        color: $specialCharacter;
+    }
+    
+    &::after {
+        content: "/>";
+        color: $specialCharacter;
+    }
+    
+    @media (max-width: 425px) {
+        font-size: 20px;
+    }
+}

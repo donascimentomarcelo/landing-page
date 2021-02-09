@@ -1,0 +1,20 @@
+@import './../../style/Variable.scss';
+
+.anchor {
+    color: $tag;
+    text-decoration: none;
+    font-weight: bold;
+    
+    &::before {
+        content: "<";
+        color: gray;
+    }
+    &::after {
+        content: "/> ";
+        color: gray;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 1.2em;
+    }
+}

@@ -1,15 +1,15 @@
 import React from 'react'
 import Anchor from '../Anchor/Anchor'
-import './SocialNetwork.css'
+import './SocialNetwork.scss'
 
 const SocialNetwork = ({ data, name, occupation }) => {
 
     const renderAnchor = () => {
         return (
-            <ul>
+            <ul className="network__ul">
                 {
                     data.map(item => (
-                        <li key={item.title}>
+                        <li className="network__li" key={item.title}>
                             <Anchor
                                 title={item.title}
                                 url={item.url} />
@@ -21,9 +21,9 @@ const SocialNetwork = ({ data, name, occupation }) => {
     }
 
     return (
-        <div className="container-social-network">
-            <h1 className="profile-name brackets"> {name} </h1> 
-            <h4 className="occupation bar-asterisk"> {occupation} </h4> 
+        <div className="network">
+            <h1 className="network__profile-name network__brackets"> {name} </h1> 
+            <h4 className="network__occupation network__bar-asterisk"> {occupation} </h4> 
             {renderAnchor()}
         </div>
     )

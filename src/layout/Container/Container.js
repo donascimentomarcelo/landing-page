@@ -1,8 +1,8 @@
 import React from 'react'
-import './Container.css'
+import './Container.scss'
 
 const Container = ({ children }) => (
-    <main className="app-container">
+    <main className="container">
         {children}
     </main>
 )

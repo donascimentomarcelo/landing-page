@@ -1,5 +1,5 @@
 import React from 'react'
-import './Language.css'
+import './Language.scss'
 
 const Language = ({ title }) => (
     <p className="lang">

@@ -1,0 +1,19 @@
+@import './../../style/Variable.scss';
+
+.contact {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &--ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    &--li {
+        margin: 5px;
+    }
+}
+
+

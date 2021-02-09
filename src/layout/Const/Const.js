@@ -1,5 +1,5 @@
 import React from 'react'
-import './Const.css'
+import './Const.scss'
 
 const Const = () => (
     <span className="const-color">const</span>

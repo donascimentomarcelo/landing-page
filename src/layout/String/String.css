@@ -1,8 +1,0 @@
-.string-color {
-    color:#ce9178;
-}
-
-.add-comma::after {
-    content: ", ";
-    color: #ffffff;
-}

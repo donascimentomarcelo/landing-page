@@ -1,5 +1,5 @@
 import React from 'react'
-import './String.css'
+import './String.scss'
 
 const String = ({name, comma}) => (
     <p className={`string-color ${comma ? 'add-comma' : null}`}>

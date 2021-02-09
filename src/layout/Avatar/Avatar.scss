@@ -1,0 +1,11 @@
+@import './../../style/Variable.scss';
+
+.avatar {
+  height: 20vmin;
+  pointer-events: none;
+  border-radius: 50%;
+  
+  @media (max-width: 425px) {
+    height: 40vmin;
+  }
+}

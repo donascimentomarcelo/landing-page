@@ -1,0 +1,12 @@
+@import './../../style/Variable.scss';
+
+.string-color {
+    color: $string;
+}
+
+.add-comma{
+    &::after {
+        content: ", ";
+        color: $comma;
+    }
+}

@@ -1,0 +1,16 @@
+@import './../../style/Variable.scss';
+
+.app-header {
+    align-items: center;
+    background-color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    
+    &__style-button {
+        background-color: $secondary;
+        border-color:  $secondary; 
+        border:  $secondary;
+        cursor: pointer;
+    }
+}

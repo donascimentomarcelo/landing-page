@@ -1,0 +1,12 @@
+@import './../../style/Variable.scss';
+
+.container {
+    font-family: sans-serif;
+    padding: 2rem;
+    background-color: $primary;
+    padding-top: 50px;
+
+    @media (max-width: 425px) {
+        padding: 1rem;
+    }
+}

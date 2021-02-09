@@ -1,7 +1,7 @@
 import React from 'react'
 import Const from '../Const/Const'
 import String from '../String/String'
-import './Skill.css'
+import './Skill.scss'
 
 const Skill = ({ type, skills }) => {
 
@@ -10,9 +10,9 @@ const Skill = ({ type, skills }) => {
     }
 
     return (
-        <div className="container-skill">
+        <div className="skill">
             <Const/> {type} = [
-            <div className="align-skill">
+            <div className="skill__align-skill">
                 { renderRow() }
             </div>
                 ]

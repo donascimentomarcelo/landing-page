@@ -1,7 +1,7 @@
 import React from 'react'
 import Const from '../Const/Const'
 import String from '../String/String'
-import './Description.css'
+import './Description.scss'
 
 const Description = ({title, description}) => {
 
@@ -10,9 +10,9 @@ const Description = ({title, description}) => {
     }
 
     return (
-        <div className="container-description">
+        <div className="description">
             <Const/> {title} = &#123;
-                <div className="align-description">
+                <div className="description__align-description">
                     { renderRow() }
                 </div>
                 &#125;

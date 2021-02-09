@@ -1,0 +1,62 @@
+@import "./../../style/Variable.scss";
+
+.network {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+
+  &__profile-name {
+    font-size: 1.5em;
+
+    @media (max-width: 425px) {
+      font-size: 1.7em;
+    }
+  }
+
+  &__brackets {
+    &::before {
+      color: $brackets;
+      content: "{{ ";
+      margin-right: 10px;
+    }
+
+    &::after {
+      color: $brackets;
+      content: " }}";
+      margin-left: 10px;
+    }
+  }
+
+  &__occupation {
+    font-size: 20px;
+    color: $specialCharacter;
+
+    @media (max-width: 425px) {
+      font-size: .87em;
+    }
+  }
+
+  &__bar-asterisk {
+    &::before {
+      content: "/** ";
+    }
+    &::after {
+      content: "**/ ";
+    }
+  }
+
+  &__ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__li {
+    @media (max-width: 425px) {
+      margin-top: 25px;
+    }
+  }
+}

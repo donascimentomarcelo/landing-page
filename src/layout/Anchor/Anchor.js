@@ -1,5 +1,5 @@
 import React from 'react'
-import './Anchor.css'
+import './Anchor.scss'
 
 const Anchor = ({ title, url }) => (
     <a
