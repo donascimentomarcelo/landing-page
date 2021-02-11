@@ -14,9 +14,22 @@ function App() {
 
   const [language, setLanguage] = React.useState('PT-br')
 
+  const getAge = () => {
+    const today = new Date();
+    const birthDate = new Date("1994/10/01");
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const month = today.getMonth() - birthDate.getMonth();
+
+    if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+  }
+
   const descriptionPt = [
-    { title: '"Olá! Bem vindo a minha página!!! '},
-    { title: 'Meu nome é Marcelo e tenho 26 anos. '},
+    { title: '"Olá! Bem vindo à minha página!!! '},
+    { title: `Meu nome é Marcelo e tenho ${getAge()} anos.`},
     { title: 'Sou formado em Tecnologia da Informação (Análise e Desenvolvimento de Sistemas) '},
     { title: 'e sou formado na MIT de em Engenharia de Software com tecnologia Java.'},
     { title: 'Abaixo está minha lista de habilidades."'},
@@ -24,9 +37,9 @@ function App() {
 
   const descriptionEn = [
     { title: '"Hi! Welcome to my page!!! '},
-    { title: 'This is Marcelo, and I am 26. '},
+    { title: `This is Marcelo, and I am ${getAge()}`},
     { title: 'I am trained in systems analysis and development'},
-    { title: 'and also in MIT Software Engineer with Java.'},
+    { title: 'and also in Software Engineer MIT with Java.'},
     { title: 'Bellow is my skills list."'},
   ];
 
@@ -50,6 +63,7 @@ function App() {
     '"CSS3"',
     '"SCSS"',
     '"Javascript"',
+    '"Typescript"',
     '"AngularJs"',
     '"Angular +2"',
     '"ReactJs"',
@@ -74,7 +88,7 @@ function App() {
   ]
 
   const skillsDevOps = [
-    '"Microserviços"',
+    '"Microservices"',
     '"APIs"',
     '"Jenkins"',
     '"Docker"',
