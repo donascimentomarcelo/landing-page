@@ -6,6 +6,6 @@
 
 Essa é minha landing page, e caso queira, pode clonar e usar como sua landing page também. Apenas troque as variáveis e NÃO USE MINHA FOTO =)  
 
-### `Eng`
+### `En-us`
 
 This is my landing page, and if u want, u can clone it and use like your landing page too. However change the variables and DON'T USE MY PIC =)
