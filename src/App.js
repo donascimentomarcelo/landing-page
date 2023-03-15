@@ -22,25 +22,25 @@ function App() {
     const month = today.getMonth() - birthDate.getMonth();
 
     if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
+      age--;
     }
     return age;
   }
 
   const descriptionPt = [
-    { title: '"Olá! Bem vindo à minha página!!! '},
-    { title: `Meu nome é Marcelo e tenho ${getAge()} anos.`},
-    { title: 'Sou formado em Tecnologia da Informação (Análise e Desenvolvimento de Sistemas) '},
-    { title: 'e sou formado na MIT de em Engenharia de Software com tecnologia Java.'},
-    { title: 'Abaixo está minha lista de habilidades."'},
+    { title: '"Olá! Bem vindo à minha página!!! ' },
+    { title: `Meu nome é Marcelo e tenho ${getAge()} anos.` },
+    { title: 'Sou formado em Tecnologia da Informação (Análise e Desenvolvimento de Sistemas) ' },
+    { title: 'e sou formado na MIT de em Engenharia de Software com tecnologia Java.' },
+    { title: 'Abaixo está minha lista de habilidades."' },
   ];
 
   const descriptionEn = [
-    { title: '"Hi! Welcome to my page!!! '},
-    { title: `This is Marcelo, and I am ${getAge()}`},
-    { title: 'I am trained in systems analysis and development'},
-    { title: 'and also in Software Engineer MIT with Java.'},
-    { title: 'Bellow is my skills list."'},
+    { title: '"Hi! Welcome to my page!!! ' },
+    { title: `This is Marcelo, and I am ${getAge()}` },
+    { title: 'I am trained in systems analysis and development' },
+    { title: 'and also in Software Engineer MIT with Java.' },
+    { title: 'Bellow is my skills list."' },
   ];
 
   const socialNetwork = [
@@ -73,6 +73,7 @@ function App() {
   const skillsBackend = [
     '"Java/Spring MVC/Spring Boot"',
     '"PHP/Laravel"',
+    '"NodeJS"',
   ]
 
   const skillsDatabase = [
@@ -80,6 +81,7 @@ function App() {
     '"Oracle"',
     '"PostgreSql"',
     '"MongoDB "',
+    '"SQLServer "',
   ]
 
   const skillsMobile = [
@@ -92,51 +94,54 @@ function App() {
     '"APIs"',
     '"Jenkins"',
     '"Docker"',
+    '"Kubernetes"',
+    '"CI/CD"',
+    '"AWS"',
     '"Git"',
   ]
 
   const changeLanguage = () => {
-    const currentLanguage = language == 'PT-br' ? 'Eng' : 'PT-br'
+    const currentLanguage = language === 'PT-br' ? 'EN-us' : 'PT-br'
     setLanguage(currentLanguage)
   }
 
-  const filterByLanguagePtBr = (param1, param2) => language == 'PT-br' ? param1 : param2;
+  const filterByLanguagePtBr = (param1, param2) => language === 'PT-br' ? param1 : param2;
 
   return (
     <div className="app">
-      <Header 
-        language={filterByLanguagePtBr('PT-br', 'Eng')} 
+      <Header
+        language={filterByLanguagePtBr('PT-br', 'EN-us')}
         handleClickLanguage={() => changeLanguage()}
-        />
+      />
       <Container>
         <Avatar avatar={avatar} />
-          <SocialNetwork
-            name="Marcelo Sant'Anna"
-            occupation={filterByLanguagePtBr('Desenvolvedor Fullstack', 'Fullstack Developer')}
-            data={socialNetwork} />
+        <SocialNetwork
+          name="Marcelo Sant'Anna"
+          occupation={filterByLanguagePtBr('Desenvolvedor Fullstack', 'Fullstack Developer')}
+          data={socialNetwork} />
         <Ide>
           <Description
-            title='description' 
-            description={filterByLanguagePtBr(descriptionPt, descriptionEn)}/>
+            title='description'
+            description={filterByLanguagePtBr(descriptionPt, descriptionEn)} />
           <Skill
-            type='frontend' 
-            skills={skillsFrontend}/>
+            type='frontend'
+            skills={skillsFrontend} />
           <Skill
-            type='backend' 
-            skills={skillsBackend}/>
+            type='backend'
+            skills={skillsBackend} />
           <Skill
-            type='database' 
-            skills={skillsDatabase}/>
+            type='database'
+            skills={skillsDatabase} />
           <Skill
-            type='mobile' 
-            skills={skillsMobile}/>
+            type='mobile'
+            skills={skillsMobile} />
           <Skill
-            type='devops' 
-            skills={skillsDevOps}/>
+            type='devops'
+            skills={skillsDevOps} />
         </Ide>
       </Container>
       <Footer
-        contact={socialNetwork}/>
+        contact={socialNetwork} />
     </div>
   );
 }
