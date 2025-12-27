@@ -1,4 +1,4 @@
-@import './../../style/Variable.scss';
+@use './../../style/Variable.scss' as *;
 
 .avatar {
   height: 20vmin;

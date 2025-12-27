@@ -1,0 +1,61 @@
+@use './../../style/Variable.scss' as *;
+
+.code-block {
+    background: #1e1e1e;
+    border-radius: 6px;
+    margin-top: 24px;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    border: 1px solid #2d2d2d;
+}
+
+.code-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #252526;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #cccccc;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.chevron {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.file-name {
+    color: #9cdcfe;
+}
+
+.code-content {
+    display: flex;
+}
+
+.line-numbers {
+    background: #1b1b1b;
+    padding: 8px 10px;
+    text-align: right;
+    user-select: none;
+    color: #858585;
+    font-size: 13px;
+}
+
+.line-numbers span {
+    display: block;
+    line-height: 1.6;
+}
+
+.code {
+    padding: 8px 12px;
+    color: #d4d4d4;
+    font-size: 13px;
+    overflow-x: auto;
+}
+
+.code-line {
+    line-height: 1.6;
+    white-space: pre;
+}
