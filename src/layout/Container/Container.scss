@@ -1,12 +1,7 @@
-@use './../../style/Variable.scss' as *;
+@use './../../style/Variable.scss' as vars;
 
 .container {
-    font-family: sans-serif;
+    background-color: vars.$primary;
+    color: vars.$text-primary;
     padding: 2rem;
-    background-color: $primary;
-    padding-top: 50px;
-
-    @media (max-width: 425px) {
-        padding: 1rem;
-    }
 }

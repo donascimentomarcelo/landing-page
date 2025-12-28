@@ -1,7 +1,7 @@
-@use './../../style/Variable.scss' as *;
+@use './../../style/Variable.scss' as vars;
 
 .app-footer {
-    background: #030303;
+    background: vars.$secondary;
     height: 70px;
     display: flex;
 }

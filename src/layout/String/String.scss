@@ -1,12 +1,13 @@
-@use './../../style/Variable.scss' as *;
+@use './../../style/Variable.scss' as vars;
 
 .string-color {
-    color: $string;
+    color: vars.$string;
+    font-weight: 600;
 }
 
 .add-comma{
     &::after {
         content: ", ";
-        color: $comma;
+        color: vars.$comma;
     }
 }

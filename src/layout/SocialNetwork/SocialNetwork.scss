@@ -19,13 +19,13 @@
 
   &__brackets {
     &::before {
-      color: $brackets;
+      color: $keyword;
       content: "{{ ";
       margin-right: 10px;
     }
 
     &::after {
-      color: $brackets;
+      color: $keyword;
       content: " }}";
       margin-left: 10px;
     }
@@ -33,7 +33,7 @@
 
   &__occupation {
     font-size: 20px;
-    color: $specialCharacter;
+    color: $comment;
 
     @media (max-width: 425px) {
       font-size: .87em;

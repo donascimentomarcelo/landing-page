@@ -1,12 +1,28 @@
-$primary: #000;
-$secondary: #030303;
+// Backgrounds
+$primary: #282a36;
+$secondary: #44475a;
+$tertiary: #1e1f29;
+$quaternary: #f8f8f2;
 
-$tertiary: #fff;
-$quaternary: #ebebde;
+// Texto
+$text-primary: #f8f8f2;
+$text-secondary: #6272a4;
 
-$string: #ce9178;
-$comma: #ffffff;
-$brackets: #569cd6;
-$specialCharacter: #9E9E9E;
-$tag: #009688;
-$const: #08d;
+// Dracula accents
+$purple: #bd93f9;
+$pink: #ff79c6;
+$green: #50fa7b;
+$orange: #ffb86c;
+$cyan: #8be9fd;
+$red: #ff5555;
+$yellow: #f1fa8c;
+
+// Syntax / semantic colors
+$string: #f1fa8c;
+$keyword: #ff79c6;
+$function: #50fa7b;
+$variable: #8be9fd;
+$const: #bd93f9;
+$comment: #6272a4;
+$tag: #f8f8f2;
+$comma: #f8f8f2;

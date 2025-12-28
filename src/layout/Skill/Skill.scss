@@ -1,6 +1,10 @@
+@use './../../style/Variable.scss' as vars;
+
 .skill {
     margin-top: 1%;
     text-align: initial;
+    color: vars.$const;
+    font-weight: 600;
  
     &__align-skill {
         margin-left: 5%;

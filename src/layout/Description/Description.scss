@@ -1,9 +1,16 @@
-@use './../../style/Variable.scss' as *;
+@use './../../style/Variable.scss' as vars;
 
 .description {
     text-align: initial;
-    
+    color: vars.$const;
+    font-weight: 600;
+
     &__align-description {
         margin-left: 5%;
     }
+}
+
+.brace {
+    color: vars.$keyword;
+    font-weight: 600;
 }

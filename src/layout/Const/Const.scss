@@ -1,5 +1,6 @@
-@use './../../style/Variable.scss' as *;
+@use './../../style/Variable.scss' as vars;
 
 .const-color {
-    color: $const;
+    color: vars.$keyword;
+    font-weight: 600;
 }

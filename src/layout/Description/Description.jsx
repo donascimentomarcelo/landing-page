@@ -11,11 +11,11 @@ const Description = ({title, description}) => {
 
     return (
         <div className="description">
-            <Const/> {title} = &#123;
+            <Const/> {title} <span className="brace"> = &#123;</span>
                 <div className="description__align-description">
                     { renderRow() }
                 </div>
-                &#125;
+                <span className="brace">&#125;</span>
         </div>
     )
 }

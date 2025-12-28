@@ -11,7 +11,7 @@ import Ide from "./layout/Ide/Ide";
 import Footer from "./layout/Footer/Footer";
 
 function App() {
-  const [language, setLanguage] = React.useState("PT-br");
+  const [language, setLanguage] = React.useState("EN-us");
 
   const getAge = () => {
     const today = new Date();
@@ -86,19 +86,19 @@ function App() {
   ];
 
   const backendSkills = [
-    '"Java 17+ | Spring Boot"',
-    '"Spring Security | Spring Data JPA"',
-    '"REST APIs | Microservices"',
-    '"PHP | Laravel"',
-    '"NodeJs | NestJs"',
+    '"Java 17+ / Spring Boot"',
+    '"Spring Security / Spring Data JPA"',
+    '"REST APIs / Microservices"',
+    '"PHP / Laravel"',
+    '"Node.js / NestJs"',
   ];
 
   const devopsSkills = [
     '"Docker"',
-    '"CI/CD"',
+    '"CI / CD"',
     '"Jenkins"',
     '"Git"',
-    '"GitLab CI | Azure DevOps"',
+    '"GitLab CI / Azure DevOps"',
   ];
 
   const architectureSkills = [
@@ -121,7 +121,7 @@ function App() {
   const cloudSkills = ['"AWS"', '"Azure"', '"Kubernetes"', '"Terraform"'];
 
   const frontendSkills = [
-    '"HTML5 | CSS3 | SCSS | Javascript | TypeScript"',
+    '"HTML5 / CSS3 / SCSS / Javascript / TypeScript"',
     '"Angular"',
     '"React"',
   ];

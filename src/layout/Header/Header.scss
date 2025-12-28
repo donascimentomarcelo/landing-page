@@ -1,19 +1,27 @@
-@use './../../style/Variable.scss' as *;
+@use './../../style/Variable.scss' as vars;
 
 .app-header {
     align-items: center;
-    background-color: $secondary;
+    background-color: vars.$secondary;
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
-    
+    border-bottom: 1px solid vars.$comment;
+
     &__style-button {
         padding: 0;
         border: none;
         background: none;
+        color: vars.$purple;
+        cursor: pointer;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: vars.$pink;
+        }
     }
 
-    &__style-button:focus { 
-        outline: none; 
+    &__style-button:focus {
+        outline: none;
     }
 }

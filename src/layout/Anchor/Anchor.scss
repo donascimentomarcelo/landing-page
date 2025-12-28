@@ -1,17 +1,17 @@
-@use './../../style/Variable.scss' as *;
+@use './../../style/Variable.scss' as vars;
 
 .anchor {
-    color: $tag;
+    color: vars.$variable;
     text-decoration: none;
     font-weight: bold;
     
     &::before {
         content: "<";
-        color: gray;
+        color: vars.$tag;
     }
     &::after {
         content: "/> ";
-        color: gray;
+        color: vars.$tag;
     }
 
     @media (max-width: 425px) {
