@@ -6,7 +6,7 @@ import './Description.scss'
 const Description = ({title, description}) => {
 
     const renderRow = () => {
-        return description.map((item, i) => (<String name={item.title} key={i}/> ))
+        return description.map((item, i) => (<String name={item} key={i}/> ))
     }
 
     return (
