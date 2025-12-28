@@ -33,41 +33,21 @@ function App() {
   };
 
   const descriptionPt = [
-    { title: 'Olá! Seja bem-vindo à minha página.' },
-    {
-      title: `Meu nome é Marcelo Sant’Anna, tenho ${getAge()} anos e atuo como Desenvolvedor Full Stack Sênior.`,
-    },
-    {
-      title: `Possuo mais de ${getYearsOfExperience()} anos de experiência no desenvolvimento de sistemas escaláveis e de alta criticidade.`,
-    },
-    {
-      title:
-        "Atuo principalmente com Java e Spring Boot no backend, e Angular e React no frontend.",
-    },
-    {
-      title:
-        "Tenho forte experiência em sistemas financeiros, integrações complexas, cloud computing e arquitetura moderna.",
-    },
-    { title: 'Abaixo estão minhas principais habilidades técnicas.' },
+    "Olá! Seja bem-vindo à minha página.",
+    `Meu nome é Marcelo Sant’Anna, tenho ${getAge()} anos e atuo como Desenvolvedor Full Stack Sênior.`,
+    `Possuo mais de ${getYearsOfExperience()} anos de experiência no desenvolvimento de sistemas escaláveis e de alta criticidade.`,
+    "Atuo principalmente com Java e Spring Boot no backend, e Angular e React no frontend.",
+    "Tenho forte experiência em sistemas financeiros, integrações complexas, cloud computing e arquitetura moderna.",
+    "Abaixo estão minhas principais habilidades técnicas.",
   ];
 
   const descriptionEn = [
-    { title: 'Hi! Welcome to my page.' },
-    {
-      title: `My name is Marcelo Sant’Anna, I’m ${getAge()} years old and a Senior Full Stack Software Engineer.`,
-    },
-    {
-      title: `I have over ${getYearsOfExperience()} years of experience building scalable and mission-critical systems.`,
-    },
-    {
-      title:
-        "My main expertise is backend development with Java and Spring Boot, combined with Angular and React on the frontend.",
-    },
-    {
-      title:
-        "I have strong experience with financial systems, complex integrations, cloud computing, and modern software architecture.",
-    },
-    { title: 'Below you can find my main technical skills.' },
+    "Hi! Welcome to my page.",
+    `My name is Marcelo Sant’Anna, I’m ${getAge()} years old and a Senior Full Stack Software Engineer.`,
+    `I have over ${getYearsOfExperience()} years of experience building scalable and mission-critical systems.`,
+    "My main expertise is backend development with Java and Spring Boot, combined with Angular and React on the frontend.",
+    "I have strong experience with financial systems, complex integrations, cloud computing, and modern software architecture.",
+    "Below you can find my main technical skills.",
   ];
 
   const socialNetwork = [
