@@ -33,7 +33,7 @@ function App() {
   };
 
   const descriptionPt = [
-    { title: '"Olá! Seja bem-vindo à minha página.' },
+    { title: 'Olá! Seja bem-vindo à minha página.' },
     {
       title: `Meu nome é Marcelo Sant’Anna, tenho ${getAge()} anos e atuo como Desenvolvedor Full Stack Sênior.`,
     },
@@ -48,11 +48,11 @@ function App() {
       title:
         "Tenho forte experiência em sistemas financeiros, integrações complexas, cloud computing e arquitetura moderna.",
     },
-    { title: 'Abaixo estão minhas principais habilidades técnicas."' },
+    { title: 'Abaixo estão minhas principais habilidades técnicas.' },
   ];
 
   const descriptionEn = [
-    { title: '"Hi! Welcome to my page.' },
+    { title: 'Hi! Welcome to my page.' },
     {
       title: `My name is Marcelo Sant’Anna, I’m ${getAge()} years old and a Senior Full Stack Software Engineer.`,
     },
@@ -67,7 +67,7 @@ function App() {
       title:
         "I have strong experience with financial systems, complex integrations, cloud computing, and modern software architecture.",
     },
-    { title: 'Below you can find my main technical skills."' },
+    { title: 'Below you can find my main technical skills.' },
   ];
 
   const socialNetwork = [

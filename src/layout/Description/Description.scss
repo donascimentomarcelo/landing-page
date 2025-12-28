@@ -4,6 +4,7 @@
     text-align: initial;
     color: vars.$const;
     font-weight: 600;
+     margin-bottom: 2rem;
 
     &__align-description {
         margin-left: 5%;
@@ -12,5 +13,10 @@
 
 .brace {
     color: vars.$keyword;
+    font-weight: 600;
+}
+
+.quote {
+    color: vars.$string;
     font-weight: 600;
 }
