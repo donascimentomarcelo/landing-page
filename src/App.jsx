@@ -7,52 +7,13 @@ const profileLinks = {
   linkedin: "https://www.linkedin.com/in/santanna-developer",
 };
 
-const projects = [
-  {
-    name: "python-app-backstage",
-    url: "https://github.com/donascimentomarcelo/python-app-backstage",
-    kind: "featured",
-    tags: ["Backstage", "Python", "Platform Engineering"],
-  },
-  {
-    name: "hexagonal-architecture-spring-boot",
-    url: "https://github.com/donascimentomarcelo/hexagonal-architecture-spring-boot",
-    kind: "featured",
-    tags: ["Java", "Spring Boot", "Hexagonal Architecture"],
-  },
-  {
-    name: "mba-terraform",
-    url: "https://github.com/donascimentomarcelo/mba-terraform",
-    kind: "featured",
-    tags: ["Terraform", "Azure", "IaC"],
-  },
-  {
-    name: "DevOpsTerraform",
-    url: "https://github.com/donascimentomarcelo/DevOpsTerraform",
-    kind: "featured",
-    tags: ["Terraform", "CI/CD", "DevOps"],
-  },
-  {
-    name: "cucumber-poc",
-    url: "https://github.com/donascimentomarcelo/cucumber-poc",
-    kind: "lab",
-    tags: ["Cucumber", "BDD", "Testing"],
-  },
-  {
-    name: "mba-observabilidade",
-    url: "https://github.com/donascimentomarcelo/mba-observabilidade",
-    kind: "lab",
-    tags: ["Observability", "Spring Boot", "Monitoring"],
-  },
-];
-
 const content = {
   pt: {
     skip: "Pular para o conteúdo",
     nav: {
       expertise: "Especialidades",
       impact: "Impacto",
-      projects: "Projetos",
+      experience: "Experiência",
       principles: "Arquitetura",
       contact: "Contato",
     },
@@ -64,7 +25,7 @@ const content = {
       "Projeto e evoluo plataformas resilientes e escaláveis com Java, Spring Boot, arquiteturas distribuídas e cloud — conectando decisões técnicas a resultados de negócio.",
     experience: "10+ anos de experiência",
     domains: "Banking · Healthcare · Logistics",
-    primaryCta: "Conheça meus projetos",
+    primaryCta: "Conheça minha trajetória",
     secondaryCta: "Conectar no LinkedIn",
     portraitAlt: "Marcelo Sant'Anna, Senior Backend Software Engineer",
     codeLabel: "engineering-profile.yml",
@@ -84,9 +45,9 @@ const content = {
       { value: "50%", prefix: "~", label: "mais rapidez no provisionamento com Terraform" },
     ],
     expertiseLabel: "Especialidades",
-    expertiseTitle: "Profundidade técnica sem perder a visão do todo.",
+    expertiseTitle: "Capacidades construídas em sistemas de alta criticidade.",
     expertiseIntro:
-      "Atuo do desenho da solução à operação, equilibrando qualidade, pragmatismo e evolução sustentável.",
+      "Esses quatro pilares conectam minha atuação do desenho da solução à operação — e sustentam a trajetória e os resultados apresentados a seguir.",
     expertise: [
       {
         number: "01",
@@ -117,8 +78,10 @@ const content = {
         skills: ["JUnit", "Mockito", "Cucumber", "k6", "Application Insights"],
       },
     ],
-    casesLabel: "Cases selecionados",
-    casesTitle: "Decisões técnicas com efeito real no produto.",
+    casesLabel: "Impacto ao longo da trajetória",
+    casesTitle: "Resultados produzidos por essas capacidades.",
+    casesIntro:
+      "Alguns exemplos de como arquitetura, performance e automação se transformaram em resultados concretos nos contextos em que atuei.",
     cases: [
       {
         context: "Pagamentos em escala",
@@ -142,27 +105,66 @@ const content = {
         stack: "Terraform · Azure · CI/CD · Kubernetes",
       },
     ],
-    projectsLabel: "Open source & laboratórios",
-    projectsTitle: "Projetos que demonstram como eu construo.",
-    projectsIntro:
-      "Implementações práticas de arquitetura, platform engineering, infraestrutura como código, testes e observabilidade.",
-    projectDescriptions: {
-      "python-app-backstage":
-        "Template de software para padronizar a criação e a experiência de serviços Python com Backstage.",
-      "hexagonal-architecture-spring-boot":
-        "Aplicação Spring Boot organizada por portas e adaptadores, com o domínio protegido de detalhes externos.",
-      "mba-terraform":
-        "Infraestrutura declarativa em Azure, estruturada para aprendizado, repetibilidade e evolução segura.",
-      DevOpsTerraform:
-        "Práticas de DevOps e automação de infraestrutura conectando Terraform ao ciclo de entrega.",
-      "cucumber-poc":
-        "Laboratório de testes de aceitação com cenários BDD legíveis e executáveis.",
-      "mba-observabilidade":
-        "Laboratório de telemetria para compreender comportamento, saúde e falhas de aplicações.",
-    },
-    featured: "Destaque",
-    lab: "Laboratório",
-    repository: "Ver repositório",
+    experienceLabel: "Experiência profissional",
+    experienceTitle: "Uma trajetória de evolução técnica e impacto no negócio.",
+    experienceIntro:
+      "Mais de uma década construindo software em saúde, setor público, logística e serviços financeiros — com responsabilidades crescentes em arquitetura, entrega e mentoria.",
+    experiences: [
+      {
+        company: "Programmers Informática",
+        role: "Senior Backend Software Engineer",
+        period: "abr 2021 — atual",
+        context: "Remoto · Banking, fintech e healthcare",
+        progression: "Promovido a Senior Backend Software Engineer em jan 2024",
+        description:
+          "Responsável por desenho e entrega de serviços críticos para pagamentos instantâneos, orquestração financeira, integrações distribuídas e plataformas de saúde.",
+        highlights: [
+          "APIs PIX e TED com requisitos rigorosos de latência e disponibilidade.",
+          "Fluxos orientados a eventos com Kafka e Azure Service Bus.",
+          "Mentoria, code reviews, refinamentos técnicos e testes de performance com k6.",
+        ],
+        skills: ["Java 17/21", "Spring Boot", "Kafka", "Azure", "AKS", "Terraform"],
+      },
+      {
+        company: "Radix",
+        role: "Backend Software Engineer",
+        period: "out 2019 — mar 2021",
+        context: "Consultoria para Ipiranga · Logística e distribuição",
+        description:
+          "Desenvolvimento de serviços de gestão logística e cálculo de frete, traduzindo regras complexas de rotas, combustível, motoristas e custos operacionais.",
+        highlights: [
+          "Contribuição para uma redução estimada de 15–20% nos custos de frete.",
+          "Serviços testáveis com integração a Oracle Database.",
+        ],
+        skills: ["Java 11", "Spring Boot", "REST APIs", "Oracle", "JUnit", "Mockito"],
+      },
+      {
+        company: "CTIS Tecnologia",
+        role: "Full Stack Software Engineer",
+        period: "jun 2018 — set 2019",
+        context: "Consultoria para o Exército Brasileiro · EsAO",
+        description:
+          "Construção de uma plataforma acadêmica para gestão de militares, turmas e avaliações, conectando backend Java a uma experiência web em Angular.",
+        highlights: [
+          "Automação da alocação de alunos em salas com múltiplos critérios.",
+          "Eliminação de retrabalho manual e redução significativa de erros operacionais.",
+        ],
+        skills: ["Java 8", "Spring Boot", "Angular", "PostgreSQL"],
+      },
+      {
+        company: "MV Sistemas",
+        role: "Backend Software Engineer",
+        period: "jun 2015 — fev 2018",
+        context: "Consultoria para Rede D’Or · Healthcare",
+        description:
+          "Desenvolvimento de uma API de integração hospitalar para centralizar dados clínicos distribuídos entre diferentes sistemas.",
+        highlights: [
+          "Unificação de informações de prontuários e fluxos clínicos.",
+          "Aproximadamente 30% mais eficiência no acesso às informações clínicas.",
+        ],
+        skills: ["Java", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
+      },
+    ],
     principlesLabel: "Princípios de arquitetura",
     principlesTitle: "Tecnologia é consequência do contexto.",
     principlesIntro:
@@ -187,7 +189,7 @@ const content = {
     nav: {
       expertise: "Expertise",
       impact: "Impact",
-      projects: "Projects",
+      experience: "Experience",
       principles: "Architecture",
       contact: "Contact",
     },
@@ -199,7 +201,7 @@ const content = {
       "I design and evolve resilient, scalable platforms with Java, Spring Boot, distributed architectures, and cloud — connecting technical decisions to business outcomes.",
     experience: "10+ years of experience",
     domains: "Banking · Healthcare · Logistics",
-    primaryCta: "Explore my work",
+    primaryCta: "Explore my journey",
     secondaryCta: "Connect on LinkedIn",
     portraitAlt: "Marcelo Sant'Anna, Senior Backend Software Engineer",
     codeLabel: "engineering-profile.yml",
@@ -219,9 +221,9 @@ const content = {
       { value: "50%", prefix: "~", label: "faster provisioning with Terraform" },
     ],
     expertiseLabel: "Expertise",
-    expertiseTitle: "Technical depth with a systems-level perspective.",
+    expertiseTitle: "Capabilities built in mission-critical systems.",
     expertiseIntro:
-      "I work from solution design to production, balancing quality, pragmatism, and sustainable evolution.",
+      "These four pillars connect my work from solution design to production — and support the career journey and outcomes presented next.",
     expertise: [
       {
         number: "01",
@@ -252,8 +254,10 @@ const content = {
         skills: ["JUnit", "Mockito", "Cucumber", "k6", "Application Insights"],
       },
     ],
-    casesLabel: "Selected case studies",
-    casesTitle: "Technical decisions with tangible product impact.",
+    casesLabel: "Impact throughout the journey",
+    casesTitle: "Outcomes enabled by these capabilities.",
+    casesIntro:
+      "A few examples of how architecture, performance, and automation became tangible results across the environments where I worked.",
     cases: [
       {
         context: "Payments at scale",
@@ -277,27 +281,66 @@ const content = {
         stack: "Terraform · Azure · CI/CD · Kubernetes",
       },
     ],
-    projectsLabel: "Open source & labs",
-    projectsTitle: "Projects that show how I build.",
-    projectsIntro:
-      "Hands-on implementations covering architecture, platform engineering, infrastructure as code, testing, and observability.",
-    projectDescriptions: {
-      "python-app-backstage":
-        "A software template that standardizes Python service creation and developer experience with Backstage.",
-      "hexagonal-architecture-spring-boot":
-        "A ports-and-adapters Spring Boot application that keeps the domain isolated from external details.",
-      "mba-terraform":
-        "Declarative Azure infrastructure structured for learning, repeatability, and safe evolution.",
-      DevOpsTerraform:
-        "DevOps and infrastructure automation practices connecting Terraform to the delivery lifecycle.",
-      "cucumber-poc":
-        "An acceptance-testing lab with readable, executable BDD scenarios.",
-      "mba-observabilidade":
-        "A telemetry lab for understanding application behavior, health, and failures.",
-    },
-    featured: "Featured",
-    lab: "Lab",
-    repository: "View repository",
+    experienceLabel: "Professional experience",
+    experienceTitle: "A career shaped by technical growth and business impact.",
+    experienceIntro:
+      "Over a decade building software across healthcare, the public sector, logistics, and financial services — with growing responsibility for architecture, delivery, and mentoring.",
+    experiences: [
+      {
+        company: "Programmers Informática",
+        role: "Senior Backend Software Engineer",
+        period: "Apr 2021 — present",
+        context: "Remote · Banking, fintech, and healthcare",
+        progression: "Promoted to Senior Backend Software Engineer in Jan 2024",
+        description:
+          "Responsible for the design and delivery of critical services for instant payments, financial orchestration, distributed integrations, and healthcare platforms.",
+        highlights: [
+          "PIX and TED APIs under strict latency and availability requirements.",
+          "Event-driven flows using Kafka and Azure Service Bus.",
+          "Mentoring, code reviews, technical refinements, and k6 performance testing.",
+        ],
+        skills: ["Java 17/21", "Spring Boot", "Kafka", "Azure", "AKS", "Terraform"],
+      },
+      {
+        company: "Radix",
+        role: "Backend Software Engineer",
+        period: "Oct 2019 — Mar 2021",
+        context: "Consulting for Ipiranga · Logistics and distribution",
+        description:
+          "Developed logistics management and freight calculation services, translating complex rules for routes, fuel, drivers, and operating costs.",
+        highlights: [
+          "Contributed to an estimated 15–20% reduction in freight costs.",
+          "Testable services integrated with Oracle Database.",
+        ],
+        skills: ["Java 11", "Spring Boot", "REST APIs", "Oracle", "JUnit", "Mockito"],
+      },
+      {
+        company: "CTIS Tecnologia",
+        role: "Full Stack Software Engineer",
+        period: "Jun 2018 — Sep 2019",
+        context: "Consulting for the Brazilian Army · EsAO",
+        description:
+          "Built an academic platform for managing military students, classes, and assessments, connecting a Java backend to an Angular web experience.",
+        highlights: [
+          "Automated student allocation to exam rooms using multiple criteria.",
+          "Eliminated manual rework and significantly reduced operational errors.",
+        ],
+        skills: ["Java 8", "Spring Boot", "Angular", "PostgreSQL"],
+      },
+      {
+        company: "MV Sistemas",
+        role: "Backend Software Engineer",
+        period: "Jun 2015 — Feb 2018",
+        context: "Consulting for Rede D’Or · Healthcare",
+        description:
+          "Developed a hospital integration API to centralize clinical data distributed across multiple systems.",
+        highlights: [
+          "Unified medical record information and clinical workflows.",
+          "Approximately 30% more efficient access to clinical information.",
+        ],
+        skills: ["Java", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
+      },
+    ],
     principlesLabel: "Architecture principles",
     principlesTitle: "Technology follows context.",
     principlesIntro:
@@ -363,9 +406,9 @@ function App() {
           </a>
 
           <nav className="main-nav" aria-label="Principal">
-            <a href="#expertise">{t.nav.expertise}</a>
             <a href="#impact">{t.nav.impact}</a>
-            <a href="#projects">{t.nav.projects}</a>
+            <a href="#expertise">{t.nav.expertise}</a>
+            <a href="#experience">{t.nav.experience}</a>
             <a href="#principles">{t.nav.principles}</a>
           </nav>
 
@@ -406,7 +449,7 @@ function App() {
               <span>{t.domains}</span>
             </div>
             <div className="hero-actions">
-              <a className="button button-primary" href="#projects">
+              <a className="button button-primary" href="#experience">
                 {t.primaryCta}
                 <span aria-hidden="true">↓</span>
               </a>
@@ -482,9 +525,42 @@ function App() {
           </div>
         </section>
 
-        <section className="cases section" aria-labelledby="cases-title">
+        <section className="experience section shell" id="experience">
+          <SectionHeading
+            label={t.experienceLabel}
+            title={t.experienceTitle}
+            intro={t.experienceIntro}
+          />
+          <div className="experience-list">
+            {t.experiences.map((item, index) => (
+              <article className="experience-item" key={`${item.company}-${item.period}`}>
+                <div className="experience-marker" aria-hidden="true">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                </div>
+                <div className="experience-meta">
+                  <p className="experience-period">{item.period}</p>
+                  <p>{item.context}</p>
+                </div>
+                <div className="experience-content">
+                  <p className="experience-company">{item.company}</p>
+                  <h3>{item.role}</h3>
+                  {item.progression && <p className="experience-progression">{item.progression}</p>}
+                  <p className="experience-description">{item.description}</p>
+                  <ul className="experience-highlights">
+                    {item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+                  </ul>
+                  <ul className="experience-skills" aria-label={`${item.company} technologies`}>
+                    {item.skills.map((skill) => <li key={skill}>{skill}</li>)}
+                  </ul>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="cases section">
           <div className="shell">
-            <SectionHeading label={t.casesLabel} title={t.casesTitle} />
+            <SectionHeading label={t.casesLabel} title={t.casesTitle} intro={t.casesIntro} />
             <div className="cases-list">
               {t.cases.map((item, index) => (
                 <article className="case-row" key={item.title}>
@@ -498,35 +574,6 @@ function App() {
                 </article>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className="projects section shell" id="projects">
-          <SectionHeading label={t.projectsLabel} title={t.projectsTitle} intro={t.projectsIntro} />
-          <div className="projects-grid">
-            {projects.map((project, index) => (
-              <a
-                className={`project-card ${project.kind}`}
-                href={project.url}
-                target="_blank"
-                rel="noreferrer"
-                key={project.name}
-              >
-                <div className="project-topline">
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <span className="project-kind">{project.kind === "featured" ? t.featured : t.lab}</span>
-                </div>
-                <h3>{project.name}</h3>
-                <p>{t.projectDescriptions[project.name]}</p>
-                <ul aria-label={`${project.name} technologies`}>
-                  {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
-                </ul>
-                <span className="project-link">
-                  {t.repository}
-                  <ExternalLinkIcon />
-                </span>
-              </a>
-            ))}
           </div>
         </section>
 
