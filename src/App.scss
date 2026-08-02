@@ -448,7 +448,7 @@ h1 {
 
   h2 {
     margin: 0;
-    font-size: clamp(2.25rem, 4.7vw, 4.4rem);
+    font-size: clamp(1.9rem, 2.7vw, 2.8rem);
     font-weight: 560;
     letter-spacing: -0.055em;
     line-height: 1.03;
@@ -724,10 +724,22 @@ h1 {
     font-size: 0.7rem;
   }
 
-  strong {
-    color: #dce8e4;
-    font-size: 0.95rem;
+  p {
+    margin: 0 0 6px;
+    color: $accent;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.66rem;
     font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin: 0;
+    color: #dce8e4;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     line-height: 1.45;
   }
 }
