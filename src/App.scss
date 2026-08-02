@@ -693,54 +693,96 @@ h1 {
 }
 
 .education {
-  display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: clamp(28px, 5vw, 72px);
-  padding-bottom: clamp(24px, 4vw, 48px);
-
-  .section-label {
-    margin: 7px 0 0;
-  }
+  padding-block: clamp(40px, 5vw, 64px);
+  border-top: 1px solid $line;
 }
 
-.education-list {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid $line;
-  list-style: none;
+.education-heading {
+  margin: 0 0 clamp(32px, 4vw, 48px);
+  color: $ink;
+  font-size: clamp(1.75rem, 2.5vw, 2.35rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  text-align: center;
+}
 
-  li {
-    display: grid;
-    grid-template-columns: 72px minmax(0, 1fr);
-    gap: 20px;
-    align-items: baseline;
-    padding-block: 20px;
-    border-bottom: 1px solid $line;
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.education-card {
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 36px 28px 32px;
+  background: linear-gradient(145deg, rgba(101, 230, 189, 0.065), rgba(13, 27, 24, 0.78));
+  border: 1px solid $line;
+  border-radius: 16px;
+  text-align: center;
+  transition: border-color 180ms ease, transform 180ms ease;
+
+  &:hover {
+    border-color: rgba(101, 230, 189, 0.38);
+    transform: translateY(-3px);
   }
 
-  span {
-    color: $accent;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.7rem;
+  h3 {
+    max-width: 310px;
+    margin: 24px 0 10px;
+    color: $ink;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.45;
   }
 
   p {
-    margin: 0 0 6px;
+    margin: 0;
     color: $accent;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.66rem;
+    font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
+}
 
-  h3 {
-    margin: 0;
-    color: #dce8e4;
-    font-size: 1.05rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.45;
+.education-year {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 5px 8px;
+  color: #b8cbc4;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid $line;
+  border-radius: 999px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+}
+
+.education-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  color: $accent;
+  background: rgba(101, 230, 189, 0.08);
+  border: 1px solid rgba(101, 230, 189, 0.16);
+  border-radius: 14px;
+
+  svg {
+    width: 28px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5;
   }
 }
 
@@ -942,15 +984,9 @@ button:focus-visible {
     grid-row: 2;
   }
 
-  .education {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+  .education-grid { grid-template-columns: 1fr; }
 
-  .education-list li {
-    grid-template-columns: 58px minmax(0, 1fr);
-    gap: 14px;
-  }
+  .education-card { min-height: 220px; }
 
   .contact-panel::after {
     width: 260px;
