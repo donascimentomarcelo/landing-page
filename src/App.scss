@@ -23,6 +23,10 @@ body {
 .app {
   min-height: 100vh;
   overflow: hidden;
+
+  main {
+    padding-top: 78px;
+  }
 }
 
 .shell {
@@ -59,8 +63,10 @@ body {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 20;
   border-bottom: 1px solid $line;
   background: rgba(7, 17, 15, 0.86);
@@ -811,9 +817,9 @@ button:focus-visible {
 @media (max-width: 720px) {
   .shell { width: min(calc(100% - 32px), $max-width); }
 
-  .site-header { position: relative; }
-
   .header-inner { min-height: 70px; }
+
+  .app main { padding-top: 70px; }
 
   .brand-name,
   .header-contact { display: none; }
