@@ -2,7 +2,7 @@
 
 Portfólio profissional de Marcelo Sant'Anna, Senior Backend Software Engineer com mais de 10 anos de experiência em sistemas distribuídos, plataformas de alta criticidade e cloud.
 
-[Acessar a página](https://donascimentomarcelo.github.io/landing-page/) · [LinkedIn](https://www.linkedin.com/in/santanna-developer) · [GitHub](https://github.com/donascimentomarcelo)
+[Acessar a página](https://donascimentomarcelo.github.io/) · [LinkedIn](https://www.linkedin.com/in/santanna-developer) · [GitHub](https://github.com/donascimentomarcelo)
 
 ## Sobre o projeto
 
@@ -32,13 +32,13 @@ A página foi desenhada para apresentar experiência profissional, especialidade
 Requisitos: Node.js 20.19+ ou 22.12+ e npm.
 
 ```bash
-git clone https://github.com/donascimentomarcelo/landing-page.git
-cd landing-page
+git clone https://github.com/donascimentomarcelo/donascimentomarcelo.github.io.git
+cd donascimentomarcelo.github.io
 npm install
 npm run dev
 ```
 
-O Vite informará a URL local no terminal, normalmente `http://localhost:5173/landing-page/`.
+O Vite informará a URL local no terminal, normalmente `http://localhost:3000/`.
 
 ## Build de produção
 
