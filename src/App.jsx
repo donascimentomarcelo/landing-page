@@ -34,7 +34,7 @@ const content = {
       ["delivery", "from architecture to production"],
     ],
     expertiseLabel: "Especialidades & impacto",
-    expertiseTitle: "Capacidades aplicadas a sistemas de alta criticidade.",
+    expertiseTitle: "Resultados.",
     expertiseIntro:
       "Quatro pilares que conectam conhecimento técnico, contexto de negócio e resultados produzidos ao longo da minha trajetória.",
     evidenceLabel: "Na prática",
@@ -77,7 +77,7 @@ const content = {
       },
     ],
     experienceLabel: "Experiência profissional",
-    experienceTitle: "Uma trajetória de evolução técnica e impacto no negócio.",
+    experienceTitle: "Minha trajetória.",
     experienceIntro:
       "Mais de uma década construindo software em saúde, setor público, logística e serviços financeiros — com responsabilidades crescentes em arquitetura, entrega e mentoria.",
     experiences: [
@@ -171,7 +171,7 @@ const content = {
       ["delivery", "from architecture to production"],
     ],
     expertiseLabel: "Expertise & impact",
-    expertiseTitle: "Capabilities applied to mission-critical systems.",
+    expertiseTitle: "Results.",
     expertiseIntro:
       "Four pillars connecting technical knowledge, business context, and outcomes delivered throughout my career.",
     evidenceLabel: "In practice",
@@ -214,7 +214,7 @@ const content = {
       },
     ],
     experienceLabel: "Professional experience",
-    experienceTitle: "A career shaped by technical growth and business impact.",
+    experienceTitle: "My journey.",
     experienceIntro:
       "Over a decade building software across healthcare, the public sector, logistics, and financial services — with growing responsibility for architecture, delivery, and mentoring.",
     experiences: [
