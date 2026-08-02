@@ -457,49 +457,11 @@ h1 {
   line-height: 1.7;
 }
 
-.impact,
 .cases,
 .principles {
   position: relative;
   background: $surface;
   border-block: 1px solid $line;
-}
-
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-block: 1px solid $line;
-}
-
-.metric-card {
-  min-height: 230px;
-  padding: 36px 30px;
-  border-right: 1px solid $line;
-
-  &:last-child { border-right: 0; }
-
-  > p:last-child {
-    max-width: 210px;
-    margin: 24px 0 0;
-    color: $muted;
-    font-size: 0.9rem;
-    line-height: 1.55;
-  }
-}
-
-.metric-value {
-  margin: 0;
-  color: $accent;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1.05rem;
-
-  strong {
-    color: $ink;
-    font-family: "Manrope", sans-serif;
-    font-size: clamp(2.5rem, 4.5vw, 4.5rem);
-    font-weight: 550;
-    letter-spacing: -0.07em;
-  }
 }
 
 .expertise-grid {
@@ -912,15 +874,6 @@ button:focus-visible {
     width: min(84%, 480px);
   }
 
-  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
-
-  .metric-card {
-    border-bottom: 1px solid $line;
-
-    &:nth-child(2) { border-right: 0; }
-    &:nth-child(n + 3) { border-bottom: 0; }
-  }
-
   .experience-item {
     grid-template-columns: 48px minmax(170px, 0.42fr) minmax(0, 1fr);
     gap: 24px;
@@ -980,17 +933,8 @@ button:focus-visible {
     bottom: -44px;
   }
 
-  .metrics-grid,
   .expertise-grid {
     grid-template-columns: 1fr;
-  }
-
-  .metric-card {
-    min-height: 180px;
-    border-right: 0;
-    border-bottom: 1px solid $line !important;
-
-    &:last-child { border-bottom: 0 !important; }
   }
 
   .expertise-card { min-height: 350px; }
