@@ -85,10 +85,10 @@ const content = {
         company: "Programmers Informática",
         role: "Senior Backend Software Engineer",
         period: "abr 2021 — atual",
-        context: "Remoto · Banking, fintech e healthcare",
+        context: "Remoto · Projetos de alta criticidade nos EUA · Healthcare e serviços financeiros",
         progression: "Promovido a Senior Backend Software Engineer em jan 2024",
         description:
-          "Responsável por desenho e entrega de serviços críticos para pagamentos instantâneos, orquestração financeira, integrações distribuídas e plataformas de saúde.",
+          "Responsável por desenho e entrega para clientes dos EUA em projetos de healthcare e serviços financeiros de alta criticidade, incluindo pagamentos instantâneos, orquestração financeira e integrações distribuídas.",
         highlights: [
           "APIs PIX e TED com requisitos rigorosos de latência e disponibilidade.",
           "Fluxos orientados a eventos com Kafka e Azure Service Bus.",
@@ -138,9 +138,9 @@ const content = {
     ],
     educationLabel: "Formação",
     education: [
-      { year: "2025", degree: "MBA em Full Cycle Architecture" },
-      { year: "2020", degree: "Pós-graduação em Engenharia de Software — foco em Java" },
-      { year: "2015", degree: "Bacharelado em Tecnologia da Informação" },
+      { year: "2025", institution: "Full Cycle", degree: "MBA em Arquitetura de Software" },
+      { year: "2020", institution: "Infnet", degree: "Pós-graduação em Engenharia de Software em Java" },
+      { year: "2015", institution: "Unisuam", degree: "Bacharelado em Tecnologia da Informação" },
     ],
     contactLabel: "Vamos conversar",
     contactTitle: "Engenharia sólida começa com uma boa conversa.",
@@ -228,10 +228,10 @@ const content = {
         company: "Programmers Informática",
         role: "Senior Backend Software Engineer",
         period: "Apr 2021 — present",
-        context: "Remote · Banking, fintech, and healthcare",
+        context: "Remote · Mission-critical US projects · Healthcare and financial services",
         progression: "Promoted to Senior Backend Software Engineer in Jan 2024",
         description:
-          "Responsible for the design and delivery of critical services for instant payments, financial orchestration, distributed integrations, and healthcare platforms.",
+          "Responsible for design and delivery for US clients across mission-critical healthcare and financial-services projects, including instant payments, financial orchestration, and distributed integrations.",
         highlights: [
           "PIX and TED APIs under strict latency and availability requirements.",
           "Event-driven flows using Kafka and Azure Service Bus.",
@@ -281,9 +281,9 @@ const content = {
     ],
     educationLabel: "Education",
     education: [
-      { year: "2025", degree: "MBA in Full Cycle Architecture" },
-      { year: "2020", degree: "Postgraduate degree in Software Engineering — Java focus" },
-      { year: "2015", degree: "Bachelor's degree in Information Technology" },
+      { year: "2025", institution: "Full Cycle", degree: "MBA in Software Architecture" },
+      { year: "2020", institution: "Infnet", degree: "Postgraduate degree in Java Software Engineering" },
+      { year: "2015", institution: "Unisuam", degree: "Bachelor's degree in Information Technology" },
     ],
     contactLabel: "Let's talk",
     contactTitle: "Solid engineering starts with a good conversation.",
@@ -485,7 +485,10 @@ function App() {
             {t.education.map((item) => (
               <li key={`${item.year}-${item.degree}`}>
                 <span>{item.year}</span>
-                <strong>{item.degree}</strong>
+                <div>
+                  <p>{item.institution}</p>
+                  <h3>{item.degree}</h3>
+                </div>
               </li>
             ))}
           </ul>
