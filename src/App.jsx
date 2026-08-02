@@ -5,6 +5,7 @@ import "./App.scss";
 const profileLinks = {
   github: "https://github.com/donascimentomarcelo",
   linkedin: "https://www.linkedin.com/in/santanna-developer",
+  whatsapp: "https://wa.me/5521982525286",
 };
 
 const content = {
@@ -13,7 +14,6 @@ const content = {
     nav: {
       expertise: "Especialidades",
       experience: "Experiência",
-      principles: "Arquitetura",
       contact: "Contato",
     },
     languageLabel: "Mudar idioma para inglês",
@@ -33,16 +33,19 @@ const content = {
       ["approach", "reliability by design"],
       ["delivery", "from architecture to production"],
     ],
-    expertiseLabel: "Especialidades",
-    expertiseTitle: "Capacidades construídas em sistemas de alta criticidade.",
+    expertiseLabel: "Especialidades & impacto",
+    expertiseTitle: "Capacidades aplicadas a sistemas de alta criticidade.",
     expertiseIntro:
-      "Esses quatro pilares conectam minha atuação do desenho da solução à operação — e sustentam a trajetória e os resultados apresentados a seguir.",
+      "Quatro pilares que conectam conhecimento técnico, contexto de negócio e resultados produzidos ao longo da minha trajetória.",
+    evidenceLabel: "Na prática",
     expertise: [
       {
         number: "01",
         title: "Backend & APIs",
         description:
           "Serviços de alta criticidade, APIs REST seguras e integrações corporativas com foco em clareza e manutenção.",
+        evidence:
+          "APIs PIX e TED, incluindo uma arquitetura com capacidade-alvo de até 1 milhão de requisições por minuto.",
         skills: ["Java", "Spring Boot", "Spring Security", "JPA", "REST APIs"],
       },
       {
@@ -50,6 +53,8 @@ const content = {
         title: "Sistemas distribuídos",
         description:
           "Arquiteturas orientadas a eventos, comunicação assíncrona, idempotência, resiliência e consistência distribuída.",
+        evidence:
+          "35% menos latência e 40% mais capacidade em picos após otimização de fluxos críticos e processamento assíncrono.",
         skills: ["Kafka", "Azure Service Bus", "Redis", "Microservices", "Keycloak"],
       },
       {
@@ -57,6 +62,8 @@ const content = {
         title: "Cloud & Platform",
         description:
           "Infraestrutura reproduzível, pipelines confiáveis e ambientes preparados para escalar com segurança.",
+        evidence:
+          "Aproximadamente 50% mais rapidez no provisionamento de ambientes com automação baseada em Terraform.",
         skills: ["Azure", "AWS", "Terraform", "Docker", "Kubernetes / AKS"],
       },
       {
@@ -64,34 +71,9 @@ const content = {
         title: "Qualidade & Observabilidade",
         description:
           "Testes e telemetria como parte da arquitetura para reduzir risco e acelerar decisões em produção.",
+        evidence:
+          "Testes de carga com k6, cenários BDD e telemetria com Application Insights para elevar a confiança em produção.",
         skills: ["JUnit", "Mockito", "Cucumber", "k6", "Application Insights"],
-      },
-    ],
-    casesLabel: "Impacto ao longo da trajetória",
-    casesTitle: "Resultados produzidos por essas capacidades.",
-    casesIntro:
-      "Alguns exemplos de como arquitetura, performance e automação se transformaram em resultados concretos nos contextos em que atuei.",
-    cases: [
-      {
-        context: "Pagamentos em escala",
-        title: "Arquitetura preparada para alto throughput",
-        description:
-          "Desenho de APIs PIX com requisitos rigorosos de segurança, resiliência e observabilidade, orientado a uma capacidade de até 1 milhão de requisições por minuto.",
-        stack: "Java · Spring Boot · Mensageria · Cloud",
-      },
-      {
-        context: "Performance e confiabilidade",
-        title: "Menos latência, mais capacidade",
-        description:
-          "Otimização de fluxos críticos e identificação de gargalos, reduzindo a latência em 35% e ampliando em 40% a capacidade durante picos.",
-        stack: "Profiling · Cache · Load testing · Observability",
-      },
-      {
-        context: "Cloud enablement",
-        title: "Infraestrutura como produto",
-        description:
-          "Padronização de infraestrutura e automação com Terraform, reduzindo em aproximadamente 50% o tempo necessário para provisionar ambientes.",
-        stack: "Terraform · Azure · CI/CD · Kubernetes",
       },
     ],
     experienceLabel: "Experiência profissional",
@@ -151,24 +133,15 @@ const content = {
           "Unificação de informações de prontuários e fluxos clínicos.",
           "Aproximadamente 30% mais eficiência no acesso às informações clínicas.",
         ],
-        skills: ["Java", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
+        skills: ["Java 6", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
       },
-    ],
-    principlesLabel: "Princípios de arquitetura",
-    principlesTitle: "Tecnologia é consequência do contexto.",
-    principlesIntro:
-      "Boas arquiteturas tornam decisões explícitas, protegem o domínio e criam espaço para o sistema evoluir.",
-    principles: [
-      { title: "Entender antes de desenhar", text: "Requisitos, restrições, riscos e atributos de qualidade vêm antes da stack." },
-      { title: "Projetar para falhas", text: "Timeouts, retries, idempotência e observabilidade são decisões de design." },
-      { title: "Reduzir acoplamento", text: "DDD, arquitetura hexagonal e contratos claros preservam a capacidade de mudança." },
-      { title: "Operar o que construímos", text: "Entrega só termina quando o software é observável, seguro e sustentável em produção." },
     ],
     contactLabel: "Vamos conversar",
     contactTitle: "Engenharia sólida começa com uma boa conversa.",
     contactText:
       "Se você está construindo sistemas críticos, modernizando uma plataforma ou fortalecendo sua engenharia backend, vamos trocar ideias.",
     contactCta: "Falar pelo LinkedIn",
+    whatsappCta: "Falar pelo WhatsApp",
     githubCta: "Explorar meu GitHub",
     footer: "Projetado e construído por Marcelo Sant'Anna.",
     backToTop: "Voltar ao topo",
@@ -178,7 +151,6 @@ const content = {
     nav: {
       expertise: "Expertise",
       experience: "Experience",
-      principles: "Architecture",
       contact: "Contact",
     },
     languageLabel: "Switch language to Portuguese",
@@ -198,16 +170,19 @@ const content = {
       ["approach", "reliability by design"],
       ["delivery", "from architecture to production"],
     ],
-    expertiseLabel: "Expertise",
-    expertiseTitle: "Capabilities built in mission-critical systems.",
+    expertiseLabel: "Expertise & impact",
+    expertiseTitle: "Capabilities applied to mission-critical systems.",
     expertiseIntro:
-      "These four pillars connect my work from solution design to production — and support the career journey and outcomes presented next.",
+      "Four pillars connecting technical knowledge, business context, and outcomes delivered throughout my career.",
+    evidenceLabel: "In practice",
     expertise: [
       {
         number: "01",
         title: "Backend & APIs",
         description:
           "Mission-critical services, secure REST APIs, and enterprise integrations designed for clarity and maintainability.",
+        evidence:
+          "PIX and TED APIs, including an architecture targeting capacity of up to one million requests per minute.",
         skills: ["Java", "Spring Boot", "Spring Security", "JPA", "REST APIs"],
       },
       {
@@ -215,6 +190,8 @@ const content = {
         title: "Distributed systems",
         description:
           "Event-driven architectures, asynchronous communication, idempotency, resilience, and distributed consistency.",
+        evidence:
+          "35% lower latency and 40% higher peak-load capacity after optimizing critical flows and asynchronous processing.",
         skills: ["Kafka", "Azure Service Bus", "Redis", "Microservices", "Keycloak"],
       },
       {
@@ -222,6 +199,8 @@ const content = {
         title: "Cloud & Platform",
         description:
           "Reproducible infrastructure, reliable pipelines, and secure environments designed to scale.",
+        evidence:
+          "Approximately 50% faster environment provisioning through Terraform-based automation.",
         skills: ["Azure", "AWS", "Terraform", "Docker", "Kubernetes / AKS"],
       },
       {
@@ -229,34 +208,9 @@ const content = {
         title: "Quality & Observability",
         description:
           "Testing and telemetry built into the architecture to reduce risk and speed up production decisions.",
+        evidence:
+          "k6 load tests, BDD scenarios, and Application Insights telemetry to increase confidence in production.",
         skills: ["JUnit", "Mockito", "Cucumber", "k6", "Application Insights"],
-      },
-    ],
-    casesLabel: "Impact throughout the journey",
-    casesTitle: "Outcomes enabled by these capabilities.",
-    casesIntro:
-      "A few examples of how architecture, performance, and automation became tangible results across the environments where I worked.",
-    cases: [
-      {
-        context: "Payments at scale",
-        title: "Architecture designed for high throughput",
-        description:
-          "PIX API design under strict security, resilience, and observability requirements, targeting capacity of up to one million requests per minute.",
-        stack: "Java · Spring Boot · Messaging · Cloud",
-      },
-      {
-        context: "Performance and reliability",
-        title: "Lower latency, higher capacity",
-        description:
-          "Critical-flow optimization and bottleneck analysis reduced latency by 35% and increased peak-load capacity by 40%.",
-        stack: "Profiling · Cache · Load testing · Observability",
-      },
-      {
-        context: "Cloud enablement",
-        title: "Infrastructure as a product",
-        description:
-          "Infrastructure standardization and Terraform automation reduced environment provisioning time by approximately 50%.",
-        stack: "Terraform · Azure · CI/CD · Kubernetes",
       },
     ],
     experienceLabel: "Professional experience",
@@ -316,24 +270,15 @@ const content = {
           "Unified medical record information and clinical workflows.",
           "Approximately 30% more efficient access to clinical information.",
         ],
-        skills: ["Java", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
+        skills: ["Java 6", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
       },
-    ],
-    principlesLabel: "Architecture principles",
-    principlesTitle: "Technology follows context.",
-    principlesIntro:
-      "Good architectures make decisions explicit, protect the domain, and create room for systems to evolve.",
-    principles: [
-      { title: "Understand before designing", text: "Requirements, constraints, risks, and quality attributes come before the stack." },
-      { title: "Design for failure", text: "Timeouts, retries, idempotency, and observability are design decisions." },
-      { title: "Reduce coupling", text: "DDD, hexagonal architecture, and clear contracts preserve the ability to change." },
-      { title: "Operate what we build", text: "Delivery ends when software is observable, secure, and sustainable in production." },
     ],
     contactLabel: "Let's talk",
     contactTitle: "Solid engineering starts with a good conversation.",
     contactText:
       "If you are building critical systems, modernizing a platform, or strengthening backend engineering, let's exchange ideas.",
     contactCta: "Message me on LinkedIn",
+    whatsappCta: "Message me on WhatsApp",
     githubCta: "Explore my GitHub",
     footer: "Designed and built by Marcelo Sant'Anna.",
     backToTop: "Back to top",
@@ -386,7 +331,6 @@ function App() {
           <nav className="main-nav" aria-label="Principal">
             <a href="#experience">{t.nav.experience}</a>
             <a href="#expertise">{t.nav.expertise}</a>
-            <a href="#principles">{t.nav.principles}</a>
           </nav>
 
           <div className="header-actions">
@@ -511,47 +455,15 @@ function App() {
                 <span className="card-number">{item.number}</span>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
+                <div className="expertise-evidence">
+                  <span>{t.evidenceLabel}</span>
+                  <p>{item.evidence}</p>
+                </div>
                 <ul aria-label={`${item.title} skills`}>
                   {item.skills.map((skill) => <li key={skill}>{skill}</li>)}
                 </ul>
               </article>
             ))}
-          </div>
-        </section>
-
-        <section className="cases section">
-          <div className="shell">
-            <SectionHeading label={t.casesLabel} title={t.casesTitle} intro={t.casesIntro} />
-            <div className="cases-list">
-              {t.cases.map((item, index) => (
-                <article className="case-row" key={item.title}>
-                  <div className="case-index">0{index + 1}</div>
-                  <div className="case-context">{item.context}</div>
-                  <div className="case-content">
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                    <span>{item.stack}</span>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="principles section" id="principles">
-          <div className="shell principles-layout">
-            <SectionHeading label={t.principlesLabel} title={t.principlesTitle} intro={t.principlesIntro} />
-            <ol className="principles-list">
-              {t.principles.map((principle, index) => (
-                <li key={principle.title}>
-                  <span>0{index + 1}</span>
-                  <div>
-                    <h3>{principle.title}</h3>
-                    <p>{principle.text}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
           </div>
         </section>
 
@@ -563,6 +475,9 @@ function App() {
             <div className="contact-actions">
               <a className="button button-light" href={profileLinks.linkedin} target="_blank" rel="noreferrer">
                 {t.contactCta}<ExternalLinkIcon />
+              </a>
+              <a className="button button-ghost" href={profileLinks.whatsapp} target="_blank" rel="noreferrer">
+                {t.whatsappCta}<ExternalLinkIcon />
               </a>
               <a className="button button-ghost" href={profileLinks.github} target="_blank" rel="noreferrer">
                 {t.githubCta}<ExternalLinkIcon />
