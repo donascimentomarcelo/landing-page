@@ -692,6 +692,46 @@ h1 {
   }
 }
 
+.education {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  padding-bottom: clamp(24px, 4vw, 48px);
+
+  .section-label {
+    margin: 7px 0 0;
+  }
+}
+
+.education-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid $line;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 20px;
+    align-items: baseline;
+    padding-block: 20px;
+    border-bottom: 1px solid $line;
+  }
+
+  span {
+    color: $accent;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+  }
+
+  strong {
+    color: #dce8e4;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+}
+
 .contact {
   padding-block: clamp(56px, 6vw, 84px);
 }
@@ -888,6 +928,16 @@ button:focus-visible {
   .experience-content {
     grid-column: 2;
     grid-row: 2;
+  }
+
+  .education {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .education-list li {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 14px;
   }
 
   .contact-panel::after {
