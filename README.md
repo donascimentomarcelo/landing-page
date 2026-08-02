@@ -6,14 +6,14 @@ Portfólio profissional de Marcelo Sant'Anna, Senior Backend Software Engineer c
 
 ## Sobre o projeto
 
-A página foi desenhada para apresentar experiência profissional por meio de impacto mensurável, cases de engenharia, especialidades e projetos open source. A interface mantém referências discretas ao universo de desenvolvimento, com foco principal em legibilidade, acessibilidade e posicionamento sênior.
+A página foi desenhada para apresentar experiência profissional por meio de impacto mensurável, especialidades, trajetória e cases de engenharia. A interface mantém referências discretas ao universo de desenvolvimento, com foco principal em legibilidade, acessibilidade e posicionamento sênior.
 
 ### Principais recursos
 
 - Conteúdo completo em português e inglês
 - Layout responsivo para desktop, tablet e mobile
 - Métricas de impacto e cases de arquitetura
-- Projetos GitHub selecionados
+- Linha do tempo profissional baseada no currículo e no LinkedIn
 - Navegação semântica e suporte a teclado
 - Preferência de movimento reduzido
 - Metadados Open Graph, Twitter Cards e Schema.org
