@@ -1,7 +1,0 @@
-@use './../../style/Variable.scss' as vars;
-
-.container {
-    background-color: vars.$primary;
-    color: vars.$text-primary;
-    padding: 2rem;
-}
