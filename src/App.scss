@@ -439,12 +439,12 @@ h1 {
 }
 
 .section {
-  padding-block: clamp(90px, 11vw, 150px);
+  padding-block: clamp(56px, 6vw, 84px);
 }
 
 .section-heading {
   max-width: 760px;
-  margin-bottom: clamp(42px, 6vw, 72px);
+  margin-bottom: clamp(32px, 4vw, 52px);
 
   h2 {
     margin: 0;
@@ -557,7 +557,7 @@ h1 {
   display: grid;
   grid-template-columns: 58px 220px minmax(0, 1fr);
   gap: clamp(24px, 4vw, 54px);
-  padding-block: clamp(44px, 6vw, 70px);
+  padding-block: clamp(36px, 4vw, 52px);
   border-bottom: 1px solid $line;
 }
 
@@ -583,16 +583,12 @@ h1 {
   &::after {
     position: absolute;
     top: 42px;
-    bottom: calc(-1 * clamp(44px, 6vw, 70px) - 1px);
+    bottom: calc(-1 * clamp(36px, 4vw, 52px) - 1px);
     left: 18px;
     width: 1px;
     background: $line;
     content: "";
   }
-}
-
-.experience-item:last-child .experience-marker::after {
-  display: none;
 }
 
 .experience-meta {
@@ -697,7 +693,7 @@ h1 {
 }
 
 .contact {
-  padding-block: clamp(72px, 9vw, 120px);
+  padding-block: clamp(56px, 6vw, 84px);
 }
 
 .contact-panel {
