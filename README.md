@@ -14,6 +14,7 @@ A página foi desenhada para apresentar experiência profissional, especialidade
 - Layout responsivo para desktop, tablet e mobile
 - Especialidades acompanhadas de evidências práticas de impacto
 - Linha do tempo profissional baseada no currículo e no LinkedIn
+- Formação acadêmica em formato compacto
 - Navegação semântica e suporte a teclado
 - Preferência de movimento reduzido
 - Metadados Open Graph, Twitter Cards e Schema.org

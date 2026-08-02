@@ -136,6 +136,12 @@ const content = {
         skills: ["Java 6", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
       },
     ],
+    educationLabel: "Formação",
+    education: [
+      { year: "2025", degree: "MBA em Full Cycle Architecture" },
+      { year: "2020", degree: "Pós-graduação em Engenharia de Software — foco em Java" },
+      { year: "2015", degree: "Bacharelado em Tecnologia da Informação" },
+    ],
     contactLabel: "Vamos conversar",
     contactTitle: "Engenharia sólida começa com uma boa conversa.",
     contactText:
@@ -272,6 +278,12 @@ const content = {
         ],
         skills: ["Java 6", "Spring", "REST", "Hibernate / JPA", "Oracle", "Maven"],
       },
+    ],
+    educationLabel: "Education",
+    education: [
+      { year: "2025", degree: "MBA in Full Cycle Architecture" },
+      { year: "2020", degree: "Postgraduate degree in Software Engineering — Java focus" },
+      { year: "2015", degree: "Bachelor's degree in Information Technology" },
     ],
     contactLabel: "Let's talk",
     contactTitle: "Solid engineering starts with a good conversation.",
@@ -465,6 +477,18 @@ function App() {
               </article>
             ))}
           </div>
+        </section>
+
+        <section className="education shell" aria-labelledby="education-title">
+          <h2 className="section-label" id="education-title">{t.educationLabel}</h2>
+          <ul className="education-list">
+            {t.education.map((item) => (
+              <li key={`${item.year}-${item.degree}`}>
+                <span>{item.year}</span>
+                <strong>{item.degree}</strong>
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section className="contact section shell" id="contact">
