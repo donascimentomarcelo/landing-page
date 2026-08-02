@@ -14,6 +14,7 @@ const content = {
     nav: {
       expertise: "Especialidades",
       experience: "Experiência",
+      education: "Formação",
       contact: "Contato",
     },
     languageLabel: "Mudar idioma para inglês",
@@ -157,6 +158,7 @@ const content = {
     nav: {
       expertise: "Expertise",
       experience: "Experience",
+      education: "Education",
       contact: "Contact",
     },
     languageLabel: "Switch language to Portuguese",
@@ -352,6 +354,8 @@ function App() {
           <nav className="main-nav" aria-label="Principal">
             <a href="#experience">{t.nav.experience}</a>
             <a href="#expertise">{t.nav.expertise}</a>
+            <a href="#education">{t.nav.education}</a>
+            <a href="#contact">{t.nav.contact}</a>
           </nav>
 
           <div className="header-actions">
@@ -366,9 +370,6 @@ function App() {
               <span className={language === "en" ? "active" : ""} aria-hidden="true">EN</span>
               <span className="sr-only">{t.languageLabel}</span>
             </button>
-            <a className="header-contact" href="#contact">
-              {t.nav.contact}
-            </a>
           </div>
         </div>
       </header>
@@ -488,7 +489,7 @@ function App() {
           </div>
         </section>
 
-        <section className="education shell" aria-labelledby="education-title">
+        <section className="education shell" id="education" aria-labelledby="education-title">
           <h2 className="education-heading" id="education-title">{t.educationLabel}</h2>
           <div className="education-grid">
             {t.education.map((item) => (
