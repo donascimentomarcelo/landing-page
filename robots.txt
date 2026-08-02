@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://donascimentomarcelo.github.io/landing-page/sitemap.xml
+Sitemap: https://donascimentomarcelo.github.io/sitemap.xml
