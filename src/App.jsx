@@ -12,7 +12,6 @@ const content = {
     skip: "Pular para o conteúdo",
     nav: {
       expertise: "Especialidades",
-      impact: "Impacto",
       experience: "Experiência",
       principles: "Arquitetura",
       contact: "Contato",
@@ -33,16 +32,6 @@ const content = {
       ["focus", "distributed systems"],
       ["approach", "reliability by design"],
       ["delivery", "from architecture to production"],
-    ],
-    impactLabel: "Impacto em números",
-    impactTitle: "Experiência traduzida em resultados mensuráveis.",
-    impactIntro:
-      "Atuação em ambientes de alta criticidade, com foco em performance, disponibilidade, segurança e velocidade de entrega.",
-    metrics: [
-      { value: "1M", suffix: " req/min", label: "capacidade-alvo em arquitetura de APIs PIX" },
-      { value: "35%", prefix: "−", label: "de latência em fluxos críticos" },
-      { value: "40%", prefix: "+", label: "de capacidade em períodos de pico" },
-      { value: "50%", prefix: "~", label: "mais rapidez no provisionamento com Terraform" },
     ],
     expertiseLabel: "Especialidades",
     expertiseTitle: "Capacidades construídas em sistemas de alta criticidade.",
@@ -188,7 +177,6 @@ const content = {
     skip: "Skip to content",
     nav: {
       expertise: "Expertise",
-      impact: "Impact",
       experience: "Experience",
       principles: "Architecture",
       contact: "Contact",
@@ -209,16 +197,6 @@ const content = {
       ["focus", "distributed systems"],
       ["approach", "reliability by design"],
       ["delivery", "from architecture to production"],
-    ],
-    impactLabel: "Impact by the numbers",
-    impactTitle: "Experience translated into measurable outcomes.",
-    impactIntro:
-      "Engineering for mission-critical environments, focused on performance, availability, security, and delivery speed.",
-    metrics: [
-      { value: "1M", suffix: " req/min", label: "target capacity for PIX API architecture" },
-      { value: "35%", prefix: "−", label: "lower latency across critical flows" },
-      { value: "40%", prefix: "+", label: "higher peak-load capacity" },
-      { value: "50%", prefix: "~", label: "faster provisioning with Terraform" },
     ],
     expertiseLabel: "Expertise",
     expertiseTitle: "Capabilities built in mission-critical systems.",
@@ -406,9 +384,8 @@ function App() {
           </a>
 
           <nav className="main-nav" aria-label="Principal">
-            <a href="#impact">{t.nav.impact}</a>
-            <a href="#expertise">{t.nav.expertise}</a>
             <a href="#experience">{t.nav.experience}</a>
+            <a href="#expertise">{t.nav.expertise}</a>
             <a href="#principles">{t.nav.principles}</a>
           </nav>
 
@@ -493,38 +470,6 @@ function App() {
           </div>
         </section>
 
-        <section className="impact section" id="impact">
-          <div className="shell">
-            <SectionHeading label={t.impactLabel} title={t.impactTitle} intro={t.impactIntro} />
-            <div className="metrics-grid">
-              {t.metrics.map((metric) => (
-                <article className="metric-card" key={metric.label}>
-                  <p className="metric-value">
-                    {metric.prefix}<strong>{metric.value}</strong>{metric.suffix}
-                  </p>
-                  <p>{metric.label}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="expertise section shell" id="expertise">
-          <SectionHeading label={t.expertiseLabel} title={t.expertiseTitle} intro={t.expertiseIntro} />
-          <div className="expertise-grid">
-            {t.expertise.map((item) => (
-              <article className="expertise-card" key={item.number}>
-                <span className="card-number">{item.number}</span>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <ul aria-label={`${item.title} skills`}>
-                  {item.skills.map((skill) => <li key={skill}>{skill}</li>)}
-                </ul>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="experience section shell" id="experience">
           <SectionHeading
             label={t.experienceLabel}
@@ -553,6 +498,22 @@ function App() {
                     {item.skills.map((skill) => <li key={skill}>{skill}</li>)}
                   </ul>
                 </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="expertise section shell" id="expertise">
+          <SectionHeading label={t.expertiseLabel} title={t.expertiseTitle} intro={t.expertiseIntro} />
+          <div className="expertise-grid">
+            {t.expertise.map((item) => (
+              <article className="expertise-card" key={item.number}>
+                <span className="card-number">{item.number}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <ul aria-label={`${item.title} skills`}>
+                  {item.skills.map((skill) => <li key={skill}>{skill}</li>)}
+                </ul>
               </article>
             ))}
           </div>
