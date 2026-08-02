@@ -305,6 +305,15 @@ function ExternalLinkIcon() {
   );
 }
 
+function EducationIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24">
+      <path d="m3 9.5 9-4.5 9 4.5-9 4.5-9-4.5Z" />
+      <path d="M7 12v4.5c2.8 2 7.2 2 10 0V12M21 10v6" />
+    </svg>
+  );
+}
+
 function SectionHeading({ label, title, intro }) {
   return (
     <div className="section-heading">
@@ -480,18 +489,19 @@ function App() {
         </section>
 
         <section className="education shell" aria-labelledby="education-title">
-          <h2 className="section-label" id="education-title">{t.educationLabel}</h2>
-          <ul className="education-list">
+          <h2 className="education-heading" id="education-title">{t.educationLabel}</h2>
+          <div className="education-grid">
             {t.education.map((item) => (
-              <li key={`${item.year}-${item.degree}`}>
-                <span>{item.year}</span>
-                <div>
-                  <p>{item.institution}</p>
-                  <h3>{item.degree}</h3>
+              <article className="education-card" key={`${item.year}-${item.degree}`}>
+                <span className="education-year">{item.year}</span>
+                <div className="education-icon">
+                  <EducationIcon />
                 </div>
-              </li>
+                <h3>{item.degree}</h3>
+                <p>{item.institution}</p>
+              </article>
             ))}
-          </ul>
+          </div>
         </section>
 
         <section className="contact section shell" id="contact">
