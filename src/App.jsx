@@ -12,7 +12,7 @@ const content = {
   pt: {
     skip: "Pular para o conteúdo",
     nav: {
-      expertise: "Especialidades",
+      expertise: "Resultados",
       experience: "Experiência",
       education: "Formação",
       contact: "Contato",
@@ -34,7 +34,7 @@ const content = {
       ["approach", "reliability by design"],
       ["delivery", "from architecture to production"],
     ],
-    expertiseLabel: "Especialidades & impacto",
+    expertiseLabel: "Engenharia & impacto",
     expertiseTitle: "Resultados.",
     expertiseIntro:
       "Quatro pilares que conectam conhecimento técnico, contexto de negócio e resultados produzidos ao longo da minha trajetória.",
@@ -156,7 +156,7 @@ const content = {
   en: {
     skip: "Skip to content",
     nav: {
-      expertise: "Expertise",
+      expertise: "Results",
       experience: "Experience",
       education: "Education",
       contact: "Contact",
@@ -178,7 +178,7 @@ const content = {
       ["approach", "reliability by design"],
       ["delivery", "from architecture to production"],
     ],
-    expertiseLabel: "Expertise & impact",
+    expertiseLabel: "Engineering & impact",
     expertiseTitle: "Results.",
     expertiseIntro:
       "Four pillars connecting technical knowledge, business context, and outcomes delivered throughout my career.",
